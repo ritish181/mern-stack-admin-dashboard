@@ -29,5 +29,11 @@ app.use("/sales", salesRoutes);
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 9000;
 mongoose.connect(process.env.MONGO_URL,{}).then(()=>{
-    app.listen(PORT, ()=> console.log(`Server Port: ${PORT}`))
+    app.listen(PORT, ()=> console.log(`Server running on Port: ${PORT}`))
 }).catch((error)=> console.log(`${error} did not connect`))
+
+
+
+//.ENV FILE
+// MONGO_URL= 'mongodb+srv://ritish181:ryuDoCrZoj2nG3Jr@cluster0.ruood.mongodb.net/mydb?retryWrites=true&w=majority&appName=Cluster0'
+// PORT=5001
