@@ -115,7 +115,7 @@ const Sidebar = ({
                 onClose={() => setIsSidebarOpen(false)}
                 variant='persistent'
                 anchor='left'
-                sx={{
+                sx={{ 
                     width: drawerWidth,
                     "& .MuiDrawer-paper": {
                         color: theme.palette.secondary[200],

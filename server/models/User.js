@@ -31,7 +31,7 @@ const UserSchema = new mongoose.Schema(
             default: "admin",
         },
     },
-    {timestamps: true}
+    { timestamps: true }
 
 );
 
